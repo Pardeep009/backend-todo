@@ -13,7 +13,7 @@ services:
     networks:
       - express-mongo
     ports:
-      - "3000:3000"
+      - 3000:3000
   mongo:
     container_name: mongo
     restart: always
@@ -23,7 +23,7 @@ services:
     networks:
       - express-mongo
     ports:
-      - "27017-27017"
+      - 27017:27017
 
 networks:
   express-mongo:
